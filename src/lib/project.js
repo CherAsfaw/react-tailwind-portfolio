@@ -4,7 +4,7 @@ const projects = [
     title: "Amazon Clone",
     description:
       "An e-commerce web app clone with product listing, cart, and checkout functionality using React, Firebase, and Tailwind.",
-    image: "../assets/images/amazon.png",
+    image: "project/images/amazon.png",
     tags: ["react", "tailwind", "firebase"],
     demoUrl: "https://amazonfrontend4152.netlify.app/",
     githubUrl: "https://github.com/CherAsfaw/Amazon-Website-Clone",
@@ -14,7 +14,7 @@ const projects = [
     title: "Netflix Clone",
     description:
       "A Netflix-inspired web app with user authentication, movie browsing, and video streaming features.",
-    image: "../assets/images/netflix.png",
+    image: "project/images/netflix.png",
     tags: ["react", "CSS", "api"],
     demoUrl: "https://cherasfaw.github.io/Netflix-Clone/",
     githubUrl: "https://github.com/CherAsfaw/Netflix-Clone",
@@ -24,7 +24,7 @@ const projects = [
     title: "Restaurant Website",
     description:
       "A modern responsive restaurant website with menu display, reservation form, and contact section.",
-    image: "../assets/images/restaurant.png",
+    image: "project/images/restaurant.png",
     tags: ["html", "css", "javascript", "tailwind"],
     demoUrl: "#",
     githubUrl: "#",
@@ -34,8 +34,8 @@ const projects = [
     title: "Evangadi Forum Q&A Page",
     description:
       "A Q&A style page where users can submit questions and answers.",
-    image: "../assets/images/evangadi-forum.png",
-    tags: ["react", "tailwind", "node.js", "express", "sql"],
+    image: "project/images/evangadi-forum.png",
+    tags: ["react", "tailwind", "node.js", "express", "MySQL"],
     demoUrl: "https://evangadiforum.cherasfaw.com/",
     githubUrl: "https://github.com/CherAsfaw/Evangadi_Forum",
   },
@@ -44,11 +44,21 @@ const projects = [
     title: "Abe Garage Management",
     description:
       "A garage management system to manage customers, car services, and billing efficiently.",
-    image: "../assets/images/abe-garage.png",
-    tags: ["react", "tailwind", "node.js", "express", "sql"],
+    image: "project/images/abe-garage.png",
+    tags: ["react", "tailwind", "node.js", "express", "MySQL"],
     demoUrl: "https://abegarage.cherasfaw.com/",
     githubUrl: "https://github.com/CherAsfaw/AbeGarageMainApp",
   },
+  {
+    id: 6,
+    title: "React_Tailwind Landing Page",
+    description:
+      "A garage management system to manage customers, car services, and billing efficiently.",
+    image: "project/images/landing_pages.png",
+    tags: ["react", "tailwind"],
+    demoUrl: "https://reacttailwindlandingpage.netlify.app/",
+    githubUrl: "https://github.com/CherAsfaw/TailwindCSS-LandingPage",
+  }
 ];
 
 export default projects;
