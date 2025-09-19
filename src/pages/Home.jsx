@@ -7,6 +7,7 @@ import AboutSection from '../components/AboutSection';
 import SkillSection from '../components/SkillSection';
 import ProjectSection from '../components/ProjectSection';
 import ContactSection from '../components/ContactSection';
+import Footer from "@/components/Footer"
 
 function Home() {
   return (
@@ -28,6 +29,7 @@ function Home() {
         <ProjectSection />
         <ContactSection/>
       </main>
+      <Footer/>
     </div>
   );
 }

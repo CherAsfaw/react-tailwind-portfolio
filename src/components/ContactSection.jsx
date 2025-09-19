@@ -1,9 +1,16 @@
-import {  Locate, Mail, MapPin, Phone } from "lucide-react";
+import {  Locate, Mail, MapPin, Phone, Send } from "lucide-react";
 import { FaInstagram, FaLinkedinIn, FaTelegram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import React from "react";
+import {cn} from "../lib/utils"
 
 function ContactSection() {
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   setTimeout(() => {
+
+  //   }, 1500)
+  // }
   return (
     <section id="contact" className="py-24 px-4 relative bg-secondary/30">
       <div className="container mx-auto max-w-5xl">
@@ -86,6 +93,54 @@ function ContactSection() {
                 </a>
               </div>
             </div>
+          </div>
+          <div className="bg-card p-8 shadow-xs rounded-lg">
+            <h1 className="text-2xl text-foreground font-semibold mb-6">Send a Message</h1>
+            <form className="space-y-3">
+              <div>
+                <label htmlFor="name" className="text-sm font-semibold mb-2 block">Your Name</label>
+                <input type="text"
+                  id="name"
+                  name="name"
+                  required
+                  placeholder="Chernet Asfaw..."
+                  className="w-full py-3 px-4 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary" />
+                
+              </div>
+              <div>
+                <label htmlFor="email" className="text-sm font-semibold mb-2 block">Your Email</label>
+                <input type="text"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="cher@gmail.com"
+                  className="w-full py-3 px-4 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary" />
+                
+              </div>
+              <div>
+                <label htmlFor="phone" className="text-sm font-semibold mb-2 block">Your Phone</label>
+                <input type="text"
+                  id="phone"
+                  name="phone"
+                  required
+                  placeholder="+251-912345678"
+                  className="w-full py-3 px-4 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary" />
+                
+              </div>
+              <div>
+                <label htmlFor="message" className="text-sm font-semibold mb-2 block">Your Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  required
+                  placeholder="hello, I'd like talk about..."
+                  className="w-full py-3 px-4 rounded-md border border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary resize-none" />
+              </div>
+              <button type="submit" className={cn("cosmic-button w-full flex items-center justify-center gap-2")}>
+                Send Message
+                <Send size={16}/>
+              </button>
+            </form>
           </div>
         </div>
       </div>
